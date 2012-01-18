@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+ 
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+    <!ENTITY kmyapplication "<application>LinTV Scheduler</application>">
+    <!ENTITY kappname "&kmyapplication;">
+    
+    <!ENTITY package "kde-module"> 
+    
+    <!ENTITY % addindex "IGNORE">
+    <!ENTITY % English "INCLUDE"> 
+]>
+
+<book lang="&language;">
+
+<bookinfo>
+  <title>The &kmyapplication; Handbook</title>
+
+  <authorgroup>
+    <author>  
+      <personname>
+        <firstname>Jesse</firstname>
+        <othername>L.</othername>
+        <surname>Zamora</surname>
+      </personname>
+      
+      <email>xtremek2009@gmail.com</email>
+      
+    </author>
+  </authorgroup>
+
+  <copyright>
+    <year>2009</year>
+    <holder>Zamora Studios</holder>
+  </copyright>
+  <!--<legalnotice>&FDLNotice;</legalnotice>-->
+  <date>2009-03-23</date>
+  <releaseinfo>0.01.00</releaseinfo>
+
+  <abstract>
+    <para>
+      &kmyapplication; is an application for scheduling TV recordings for LinTV.
+    </para>
+  </abstract>
+
+  <keywordset>
+    <keyword>KDE</keyword>
+    <keyword>extragear/multimedia</keyword>
+    <keyword>LinTV Scheduler</keyword>
+    <keyword>lintvscheduler</keyword>
+    <keyword>scheduler</keyword>
+    <keyword>scheduling TV</keyword>
+  </keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+  <title>Introduction</title>
+  
+  <para>
+    <guiicon><inlinemediaobject>
+      <imageobject>
+        <imagedata fileref="lintvscheduler_icon.png" format="PNG"/>
+      </imageobject>
+      <textobject>
+        <phrase>The &kmyapplication; icon</phrase>
+      </textobject>
+    </inlinemediaobject></guiicon>
+  </para>
+
+<para>
+&kmyapplication; is a program that lets you create and edit TV recording schedules for LinTV.
+It uses atd for the scheduling and LinTV to record in the background. One nice feature of 
+LinTV Scheduler is that it can set LinTV to record even when you're not logged in, which helps
+if you don't auto-login into your system!
+</para>
+
+</chapter>
+
+</book>

@@ -1,0 +1,46 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+ 
+ <kpartgui name="LinTV" version="010">
+ 
+ <Menu name="lintv_context" noMerge="1"><text>LinTV</text>
+    <Action name="tv_mode"/>
+    <Menu name="select_device" noMerge="1"><text>Select Device</text>
+        <Action name="device_info"/>
+        <Separator/>
+    </Menu>
+    <Menu name="video" noMerge="1"><text>Video</text>
+        <Action name="adjust_colors"/>
+        <Action name="default_size"/>
+        <Separator/>
+    </Menu>
+    <Separator/>
+    <Action name="options_configure"/>
+    <Menu name="help" icon="system-help" noMerge="1"><text>&amp;Help</text>
+        <Action name="help_contents"/>
+        <Separator/>
+        <Action name="help_report_bug"/>
+        <Separator/>
+        <Action name="help_about_app"/>
+        <Action name="help_about_kde"/>
+    </Menu>
+    <Separator/>
+    <Action name="file_quit"/>
+ </Menu>
+ 
+ <Menu name="screenshot_context" noMerge="1"><text>Screenshot</text>
+    <Action name="return_to_tv"/>
+    <Action name="tv_mode"/>
+    <Action name="options_configure"/>
+    <Menu name="help" icon="system-help" noMerge="1"><text>&amp;Help</text>
+        <Action name="help_contents"/>
+        <Separator/>
+        <Action name="help_report_bug"/>
+        <Separator/>
+        <Action name="help_about_app"/>
+        <Action name="help_about_kde"/>
+    </Menu>
+    <Separator/>
+    <Action name="file_quit"/>
+ </Menu>
+ 
+ </kpartgui>

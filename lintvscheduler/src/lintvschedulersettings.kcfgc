@@ -1,0 +1,5 @@
+
+File=lintvscheduler.kcfg
+ClassName=Settings
+Signleton=true
+Mutators=true

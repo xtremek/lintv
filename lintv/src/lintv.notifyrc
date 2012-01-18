@@ -1,0 +1,78 @@
+[Global]
+IconName=lintv
+Comment=LinTV
+Comment[de]=LinTV
+Comment[en_GB]=LinTV
+Comment[es]=LinTV
+Comment[et]=LinTV
+Comment[fr]=LinTV
+Comment[ga]=LinTV
+Comment[gl]=LinTV
+Comment[it]=LinTV
+Comment[km]=LinTV
+Comment[nb]=LinTV
+Comment[nds]=LinTV
+Comment[pt]=LinTV
+Comment[pt_BR]=LinTV
+Comment[sv]=Lintv
+Comment[tr]=LinTV
+Comment[uk]=LinTV
+Comment[x-test]=xxLinTVxx
+
+[Event/StartedRecording]
+Name=Started Recording
+Name[en_GB]=Started Recording
+Name[es]=Grabación iniciada
+Name[et]=Alustati salvestamist
+Name[fr]=Enregistrement démarré
+Name[gl]=Comezou a gravación
+Name[it]=Inizio registrazione
+Name[km]=បាន​ចាប់ផ្ដើម​ថត
+Name[nb]=Startet opptak av <Name>, <Time>S
+Name[nds]=Opnahm anfungen
+Name[pt]=Gravação Iniciada
+Name[pt_BR]=Gravação iniciada
+Name[sv]=Startade inspelning
+Name[tr]=Kayıt Başladı
+Name[uk]=Почато запис
+Name[x-test]=xxStarted Recordingxx
+Action=Popup
+
+[Event/CanceledRecording]
+Name=Canceled Recording
+Name[de]=Aufnahme abgebrochen
+Name[en_GB]=Cancelled Recording
+Name[es]=Grabación cancelada
+Name[et]=Salvestamine katkestati
+Name[fr]=Enregistrement annulé
+Name[gl]=Cancelouse a gravación
+Name[it]=Registrazione annullata
+Name[km]=បានបោះបង់​ការ​ថត
+Name[nb]=Avbrutt opptak
+Name[nds]=Opnahm afbraken
+Name[pt]=Gravação Cancelada
+Name[pt_BR]=Gravação cancelada
+Name[sv]=Avbröt inspelning
+Name[tr]=Kayıt İptal Edildi
+Name[uk]=Скасований запис
+Name[x-test]=xxCanceled Recordingxx
+Action=Popup
+
+[Event/FinishedRecording]
+Name=Finished Recording
+Name[de]=Aufnahme abgeschlossen
+Name[en_GB]=Finished Recording
+Name[es]=Grabación terminada
+Name[et]=Salvestamine lõpetati
+Name[fr]=Enregistrement terminé
+Name[gl]=Rematou a gravación
+Name[it]=Fine registrazione
+Name[km]=បានបញ្ចប់​ការ​ថត
+Name[nds]=Opnahm afslaten
+Name[pt]=Gravação Terminada
+Name[pt_BR]=Gravação concluída
+Name[sv]=Avslutade inspelning
+Name[tr]=Kayıt Tamamlandı
+Name[uk]=Завершений запис
+Name[x-test]=xxFinished Recordingxx
+Action=Popup

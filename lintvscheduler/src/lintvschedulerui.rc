@@ -1,0 +1,12 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+ 
+<kpartgui name="LinTVScheduler" version="001">
+
+<ToolBar name="main">
+    <Action name="add_program"/>
+    <Action name="edit_program"/>
+    <Action name="remove_program"/>
+    <Action name="refresh_programs"/>
+</ToolBar>
+
+</kpartgui>

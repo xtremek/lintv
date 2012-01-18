@@ -1,0 +1,349 @@
+<ui version="4.0" >
+ <class>programEditorWidget</class>
+ <widget class="QWidget" name="programEditorWidget" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>390</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>390</width>
+    <height>380</height>
+   </size>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4" >
+   <item row="0" column="0" colspan="2" >
+    <layout class="QHBoxLayout" name="horizontalLayout" >
+     <item>
+      <widget class="QLabel" name="programName" >
+       <property name="text" >
+        <string>Program Name:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="programNameLineEdit" />
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0" >
+    <widget class="QGroupBox" name="runGroupBox" >
+     <property name="title" >
+      <string>Run the recording:</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout" >
+      <item row="0" column="0" >
+       <widget class="QRadioButton" name="oneTimeRadioButton" >
+        <property name="toolTip" >
+         <string>Record only once</string>
+        </property>
+        <property name="whatsThis" >
+         <string>This records a program only one time, starting at the starting date you specify.</string>
+        </property>
+        <property name="text" >
+         <string>One Time Only</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QRadioButton" name="dailyRadioButton" >
+        <property name="toolTip" >
+         <string>Record every day</string>
+        </property>
+        <property name="whatsThis" >
+         <string>This will record every day of the week which you select in the "Days to run" group box.</string>
+        </property>
+        <property name="text" >
+         <string>Every Day</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QRadioButton" name="weeklyRadioButton" >
+        <property name="toolTip" >
+         <string>Record every week</string>
+        </property>
+        <property name="whatsThis" >
+         <string>This records every week, starting at the date you specify. For example, if you start it on a Tuesday, it will run the next Tuesday, and so on.</string>
+        </property>
+        <property name="text" >
+         <string>Every Week</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item rowspan="2" row="1" column="1" >
+    <widget class="QGroupBox" name="timeDatesGroupBox" >
+     <property name="title" >
+      <string>Run Time &amp;&amp; Date</string>
+     </property>
+     <layout class="QGridLayout" name="runTimeDateLayout" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="startTimeLabel" >
+        <property name="text" >
+         <string>Start Time:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="QTimeEdit" name="startTimeEdit" >
+        <property name="toolTip" >
+         <string>Choose at what time you would like to start recording.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="endTimeLabel" >
+        <property name="text" >
+         <string>End Time:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="QTimeEdit" name="endTimeEdit" >
+        <property name="toolTip" >
+         <string>Choose at what time you would like to end the recording.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2" >
+       <widget class="QLabel" name="runTimeLabel" >
+        <property name="sizePolicy" >
+         <sizepolicy vsizetype="Preferred" hsizetype="Fixed" >
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text" >
+         <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">Duration: 30 min&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" >
+       <widget class="QLabel" name="endingDateLabel" >
+        <property name="text" >
+         <string>Ending Date:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" >
+       <widget class="QLabel" name="startingDateLabel" >
+        <property name="text" >
+         <string>Starting Date:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" >
+       <widget class="QDateEdit" name="endDateEdit" >
+        <property name="toolTip" >
+         <string>Choose a date to stop recording your program.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" >
+       <widget class="QDateEdit" name="startDateEdit" >
+        <property name="toolTip" >
+         <string>Choose a start date for your program.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="2" >
+       <widget class="QLabel" name="nextRunDateLabel" >
+        <property name="sizePolicy" >
+         <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text" >
+         <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">Next Run Date: &lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item rowspan="2" row="2" column="0" >
+    <widget class="QGroupBox" name="daysToRunGroupBox" >
+     <property name="title" >
+      <string>Days to run:</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3" >
+      <item row="0" column="0" >
+       <widget class="QCheckBox" name="sundayCheckBox" >
+        <property name="text" >
+         <string>Sunday</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QCheckBox" name="mondayCheckBox" >
+        <property name="text" >
+         <string>Monday</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QCheckBox" name="tuesdayCheckBox" >
+        <property name="text" >
+         <string>Tuesday</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" >
+       <widget class="QCheckBox" name="wednesdayCheckBox" >
+        <property name="text" >
+         <string>Wednesday</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" >
+       <widget class="QCheckBox" name="thursdayCheckBox" >
+        <property name="text" >
+         <string>Thursday</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" >
+       <widget class="QCheckBox" name="fridayCheckBox" >
+        <property name="text" >
+         <string>Friday</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0" >
+       <widget class="QCheckBox" name="saturdayCheckBox" >
+        <property name="text" >
+         <string>Saturday</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" >
+       <widget class="QPushButton" name="selectAllPushButton" >
+        <property name="toolTip" >
+         <string>Select All the Days</string>
+        </property>
+        <property name="text" >
+         <string>Select All</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1" >
+       <widget class="QPushButton" name="selectNonePushButton" >
+        <property name="toolTip" >
+         <string>Deselect All the Days</string>
+        </property>
+        <property name="text" >
+         <string>Select None</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="1" >
+    <widget class="QGroupBox" name="programSettingsGroupBox" >
+     <property name="title" >
+      <string>Record Settings</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="deviceLabel" >
+        <property name="text" >
+         <string>Device:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2" >
+       <widget class="QComboBox" name="deviceComboBox" >
+        <property name="toolTip" >
+         <string>Select a device to record from.</string>
+        </property>
+        <property name="whatsThis" >
+         <string>If you have multiple devices in your system, you may select the device you would like to record from here.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="inputLabel" >
+        <property name="text" >
+         <string>Input:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2" >
+       <widget class="QComboBox" name="inputComboBox" >
+        <property name="toolTip" >
+         <string>Select an input on the device.</string>
+        </property>
+        <property name="whatsThis" >
+         <string>You may select what input on the selected device from which to record from here.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2" >
+       <widget class="QLabel" name="channelLabel" >
+        <property name="text" >
+         <string>Channel:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2" >
+       <widget class="QSpinBox" name="channelSpinBox" >
+        <property name="toolTip" >
+         <string>Select a channel.</string>
+        </property>
+        <property name="whatsThis" >
+         <string>Select a channel. If you set Input to be something other than "Tuner" or "Television", you cannot change the channel.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

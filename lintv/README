@@ -1,0 +1,18 @@
+Welcome to LinTV, The Best TV for your Linux!
+
+LinTV is basically a program for viewing & recording TV. It is quite simple as compared to MythTV; in fact, LinTV was created not only as a replacement for kdetv but also because MythTV was too large and complex for the regular user to set up. LinTV uses Mplayer and Mencoder (see www.mplayerhq.hu) as backends for viewing and recording, respectively, which allows it to support many TV tuners. Please see the LinTV documentation for a list of TV tuners which work with LinTV.
+
+LinTV doesn't have too many features so the user won't be swamped with a slew of settings. Here is a list of what it supports:
+
+ * Viewing and recording TV
+ * Taking screenshots at preset or custom resolutions and different formats.
+ * Setting the brightness, contrast, hue, & saturation of videos.
+ * Recording to the mpeg1, mpeg2, mpeg4, mjpeg, and wmv formats. 
+ * Recording without a GUI (for scheduling TV recordings).
+ * A configuration dialog for recording presets.
+ * Cropping video.
+
+Please see the INSTALL file for prerequisites and instructions on how to compile and install LinTV.
+
+Notes:
+ - You might notice that recording from LinTV doesn't work correctly; that's because I was experimenting with viewing and recording TV at the same time with mplayer and mencoder. Unfortunately, mplayer will require some serious modifications in order to accomplish this. So, stand by, as the Xtreme Kommander attempts to make mplayer view and record a video at the same time! :-)

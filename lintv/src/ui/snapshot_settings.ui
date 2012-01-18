@@ -1,0 +1,240 @@
+<ui version="4.0" >
+ <class>snapshotSettingsPage</class>
+ <widget class="QWidget" name="snapshotSettingsPage" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>463</width>
+    <height>357</height>
+   </rect>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4" >
+   <property name="margin" >
+    <number>4</number>
+   </property>
+   <item row="0" column="0" colspan="2" >
+    <widget class="QGroupBox" name="snapshotDirectoryGroupBox" >
+     <property name="title" >
+      <string>Snapshot Directory</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3" >
+      <property name="leftMargin" >
+       <number>9</number>
+      </property>
+      <property name="topMargin" >
+       <number>0</number>
+      </property>
+      <property name="rightMargin" >
+       <number>9</number>
+      </property>
+      <property name="bottomMargin" >
+       <number>8</number>
+      </property>
+      <item row="0" column="0" >
+       <widget class="KUrlRequester" name="screenshotDirectory" />
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item rowspan="2" row="1" column="0" >
+    <widget class="QGroupBox" name="dimensionsGroupBox" >
+     <property name="title" >
+      <string>Snapshot Dimensions</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout" >
+      <item row="0" column="0" >
+       <widget class="QRadioButton" name="_1600x1200_radioButton" >
+        <property name="text" >
+         <string>1600x1200</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QRadioButton" name="_1280x1024_radioButton" >
+        <property name="text" >
+         <string>1280x1024</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QRadioButton" name="_1024x768_radioButton" >
+        <property name="text" >
+         <string>1024x768 (Default)</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" >
+       <widget class="QRadioButton" name="_800x600_radioButton" >
+        <property name="text" >
+         <string>800x600</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" >
+       <widget class="QRadioButton" name="_640x480_radioButton" >
+        <property name="text" >
+         <string>640x480</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" >
+       <widget class="QRadioButton" name="_320x240_radioButton" >
+        <property name="text" >
+         <string>320x240</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0" >
+       <widget class="QRadioButton" name="actualSizeRadioButton" >
+        <property name="text" >
+         <string>Actual Size</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" >
+       <layout class="QHBoxLayout" name="horizontalLayout" >
+        <item>
+         <widget class="QRadioButton" name="customRadioButton" >
+          <property name="text" >
+           <string>Custom</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="widthSpinBox" >
+          <property name="enabled" >
+           <bool>false</bool>
+          </property>
+          <property name="minimum" >
+           <number>16</number>
+          </property>
+          <property name="maximum" >
+           <number>8000</number>
+          </property>
+          <property name="value" >
+           <number>1024</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="xLabel" >
+          <property name="enabled" >
+           <bool>false</bool>
+          </property>
+          <property name="text" >
+           <string>x</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="heightSpinBox" >
+          <property name="enabled" >
+           <bool>false</bool>
+          </property>
+          <property name="minimum" >
+           <number>16</number>
+          </property>
+          <property name="maximum" >
+           <number>8000</number>
+          </property>
+          <property name="value" >
+           <number>768</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="pxLabel" >
+          <property name="enabled" >
+           <bool>false</bool>
+          </property>
+          <property name="text" >
+           <string>px.</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1" >
+    <widget class="QGroupBox" name="formatGroupBox" >
+     <property name="title" >
+      <string>Snapshot Format</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2" >
+      <property name="margin" >
+       <number>4</number>
+      </property>
+      <property name="spacing" >
+       <number>4</number>
+      </property>
+      <item row="0" column="0" >
+       <widget class="QRadioButton" name="pngRadioButton" >
+        <property name="text" >
+         <string>PNG (Default)</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QRadioButton" name="jpgRadioButton" >
+        <property name="text" >
+         <string>JPG</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QRadioButton" name="bmpRadioButton" >
+        <property name="text" >
+         <string>BMP</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="1" >
+    <spacer name="verticalSpacer" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>178</width>
+       <height>156</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="0" >
+    <spacer name="verticalSpacer_2" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KUrlRequester</class>
+   <extends>QFrame</extends>
+   <header>kurlrequester.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

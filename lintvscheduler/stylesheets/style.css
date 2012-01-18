@@ -1,0 +1,17 @@
+QTreeWidget {
+    /*background-color: white;*/
+    background-image: url($picsDir/lintvscheduler-background.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+
+QLabel {
+    font-style: italic;
+    font-size: 14px;
+    color: #A0A0A0;
+    margin-top: 20px;
+    margin-left: 2px;
+    margin-right: 180px;
+    margin-bottom: 2px;
+}

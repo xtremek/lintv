@@ -1,0 +1,35 @@
+Welcome to LinTV, The Best TV for your Linux!
+
+Here's a list of programs you need to compile & run LinTV:
+ - KDE 4.2 or higher with development packages
+ - If you have any Hauppage WinTV device using the ivtv driver, you need the ivtv-utils & ivtv-firmware packages.
+ - you must have the latest mplayer & mencoder svn! (for the -input nodefault-bindings command)
+
+To compile LinTV, just follow these steps:
+ 1. Open a terminal window  (such as the Konsole or Gnome Terminal)
+ 2. Change the directory to the place you extracted the LinTV sources to:
+
+    $ cd /path/to/lintv/source
+
+ 3. Create a directory in which to build LinTV to keep the source clean:
+
+    $ mkdir build; cd build
+
+ 4. Run cmake with the path to your KDE4 installation:
+
+    $ cmake -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix` -DCMAKE_BUILD_TYPE=release ..
+    
+      OR
+    
+    $ cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=release
+
+ 5. Run make to start building LinTV:
+
+    $ make -j3      <-- It compiles faster with -j3 or -j<n> (n = number of CPU's) if you have more than one CPU!
+
+ 6. Install LinTV:
+
+    # sudo or su make install
+
+ 7. Run LinTV! Enjoy!
+
